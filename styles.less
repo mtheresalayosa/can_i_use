@@ -1,0 +1,107 @@
+* {
+    font: 100% / 1.5 "Open Sans", Helvetica, Arial, sans-serif;
+}
+@whitecolor: rgb(255, 255, 255);
+@orangebg: rgb(199, 80, 0);
+
+body {
+    background-image: url(assets/caniuse-bg.png);
+}
+    nav {
+        padding: 10px 0px;
+    }
+        nav a {
+            font-size: 20px;
+            color: @whitecolor;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.139);
+            padding: 15px;
+        }
+            .nav-end {
+                position: relative;
+                left: 660px;
+            }
+    .search-bar {
+        background-color: @orangebg;
+        margin: 20px 0px;
+        padding: 15px 0px;
+    }
+        .search-bar form {
+            text-align: center;
+            font-size: 30px;
+            color: @whitecolor;
+        }
+            .search-bar form input[type=text] {  
+                border: 0;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                color: @whitecolor;
+                text-align: center;
+            }
+    main {
+        background-color: rgb(242, 233, 214);
+        padding: 5px 20px;
+        margin-top: 40px;
+    }
+        main > h1, p, section {
+            margin: 25px 0px;
+        }
+            main h1 span {
+                position: absolute;
+                left: 32px;
+                background-color: @orangebg;
+                color: @whitecolor;
+                padding: 0px 10px;
+                line-height: 49px;
+            }
+        main p {
+            width: 50%;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        main section {
+            margin: 15px;
+        }
+            main section > ul, li {
+                display: inline-block;
+            }
+            .li-header, .li-row {
+                padding: 0px;
+                margin: 1px 0px;
+            }
+                .li-header li {
+                    font-size: 17px;
+                    width: 90px;
+                    text-align: center;
+                    border-bottom: 3px solid black;
+                }
+                .li-row li {
+                    display: inline-block;
+                    width: 90px;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+                .li-row .bg-empty {
+                    background-color: rgba(221, 221, 221, 0.311);
+                }
+                .mini-num {
+                    float:left;
+                    border: 1px solid black;
+                    font-size:x-small;
+                    background-color: @whitecolor;
+                    padding:0px 3px;
+                    color: black;
+                }
+                .bg-army, .bg-dred, .bg-green {
+                    color: @whitecolor;
+                    text-align: center;
+                }
+                .bg-army {
+                    background-color: rgb(148, 112, 12);
+                }
+                .bg-dred {
+                    background-color: rgb(129, 0, 0);
+                }
+                .bg-green {
+                    background-color: rgb(37, 133, 51);
+                }
